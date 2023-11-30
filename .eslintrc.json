@@ -5,7 +5,8 @@
     },
     "extends": [
         "standard",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "prettier"
     ],
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -17,6 +18,11 @@
     // write rules for disabling semicolon at the end of line
     "rules": {
         "semi": ["error", "always"]
-    }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }    
 
 }
