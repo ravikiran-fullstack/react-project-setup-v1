@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 import './index.css';
 
-function App() {
+function App () {
   const [searchTerm, setSearchTerm] = useState('');
 
   const debounce = (func, delay) => {
