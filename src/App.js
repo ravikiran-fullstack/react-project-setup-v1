@@ -19,7 +19,7 @@ function App () {
   const debounceFunc = debounce((value) => {
     console.log(value);
     setSearchTerm(value);
-  }, 100);
+  }, 150);
 
   const handleInputChange = (event) => {
     debounceFunc(event.target.value);
