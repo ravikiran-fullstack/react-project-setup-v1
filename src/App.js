@@ -19,6 +19,8 @@ function App () {
   const debounceFunc = debounce((value) => {
     console.log(value);
     setSearchTerm(value);
+    // write code to call API here
+    
   }, 200);
 
   const handleInputChange = (event) => {
