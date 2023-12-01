@@ -19,11 +19,11 @@
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix src/**/*.{js,jsx,ts,tsx,json}",
     "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json,scss} --config ./.prettierrc",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint && npm run test"
   },
   "lint-staged": {
     "**./*.{js,jsx,ts,tsx}": [
-      "npm run lint:fix" 
+      "npm run lint:fix"
     ]
   },
   "husky": {
@@ -58,6 +58,7 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
+    "jest": "^27.5.1",
     "lint-staged": "^15.1.0",
     "prettier": "^3.1.0"
   }

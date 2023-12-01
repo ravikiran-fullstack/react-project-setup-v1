@@ -31,7 +31,7 @@ function App () {
     <div className="container">
       <header>
         <p>Search functionality with debounce function</p>
-        <input type="text" onChange={handleInputChange} value={searchTerm} />
+        <input data-testid="input" type="text" onChange={handleInputChange} value={searchTerm} />
       </header>
     </div>
   );
