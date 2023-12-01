@@ -20,8 +20,8 @@ function App () {
     console.log(value);
     setSearchTerm(value);
     // write code to call API here
-    
-  }, 200);
+
+  }, 175);
 
   const handleInputChange = (event) => {
     debounceFunc(event.target.value);
