@@ -17,7 +17,7 @@ function App () {
 
   // write code to utilize debounce function
   const debounceFunc = debounce((value) => {
-    console.log(value);
+    // console.log(value);
     setSearchTerm(value);
     // write code to call API here
 

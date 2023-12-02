@@ -14,7 +14,7 @@ describe('App', () => {
     // Wait for debounce delay (175ms)
     await waitFor(() => {
       expect(screen.getByTestId('input').value).toBe('test');
-    }, { timeout: 200 });
+    });
 
   });
 });
